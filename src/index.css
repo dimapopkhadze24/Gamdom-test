@@ -1,0 +1,79 @@
+:root {
+  /*  Dark Theme Variables */
+  --primary-brand-color-main: #00ff86;
+  --primary-light-color-600: #818e9d;
+  --primary-light-color-500: #818e9d;
+  --primary-dark-color-main: #0a1119;
+  --primary-dark-color-700: #0e161e;
+  --primary-dark-color-500: #171e26;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  background-color: var(--primary-dark-color-main);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark-color-700);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-brand-color-main);
+  border-radius: 3px;
+}
+
+/* Firefox scrollbar styling */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /*  Light Theme Variables */
+    --primary-light-color-main: #00ff86;
+    --primary-dark-color-main: #0a1119;
+    --primary-dark-color-700: #0e161e;
+    --primary-dark-color-500: #171e26;
+  }
+}

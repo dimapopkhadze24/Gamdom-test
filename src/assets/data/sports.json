@@ -1,0 +1,34 @@
+[
+  {
+    "sportId": 647,
+    "sport": "Soccer",
+    "viewOrder": 2,
+    "providerCode": "sr:sport:1",
+    "liveMatchesCount": 20,
+    "isESport": "N"
+  },
+  {
+    "sportId": 556,
+    "sport": "Basketball",
+    "viewOrder": 3,
+    "providerCode": "sr:sport:2",
+    "liveMatchesCount": 1,
+    "isESport": "N"
+  },
+  {
+    "sportId": 711,
+    "sport": "Tennis",
+    "viewOrder": 4,
+    "providerCode": "sr:sport:5",
+    "liveMatchesCount": 18,
+    "isESport": "N"
+  },
+  {
+    "sportId": 540,
+    "sport": "Baseball",
+    "viewOrder": 6,
+    "providerCode": "sr:sport:3",
+    "liveMatchesCount": 1,
+    "isESport": "N"
+  }
+]

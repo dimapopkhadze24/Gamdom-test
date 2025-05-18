@@ -1,0 +1,101 @@
+{
+  "Soccer": [
+    {
+      "Abbreviation": "ARS",
+      "CountryCode": "ENG",
+      "Gender": "male",
+      "Id": "sr:competitor:42",
+      "Name": "Arsenal"
+    },
+    {
+      "Abbreviation": "NEW",
+      "CountryCode": "ENG",
+      "Gender": "male",
+      "Id": "sr:competitor:39",
+      "Name": "Newcastle"
+    },
+    {
+      "Abbreviation": "LIV",
+      "CountryCode": "ENG",
+      "Gender": "male",
+      "Id": "sr:competitor:17",
+      "Name": "Liverpool"
+    },
+    {
+      "Abbreviation": "MCI",
+      "CountryCode": "ENG",
+      "Gender": "male",
+      "Id": "sr:competitor:35",
+      "Name": "Manchester City"
+    }
+  ],
+  "Basketball": [
+    {
+      "Abbreviation": "LAL",
+      "CountryCode": "USA",
+      "Gender": "male",
+      "Id": "sr:competitor:101",
+      "Name": "Los Angeles Lakers"
+    },
+    {
+      "Abbreviation": "BOS",
+      "CountryCode": "USA",
+      "Gender": "male",
+      "Id": "sr:competitor:102",
+      "Name": "Boston Celtics"
+    },
+    {
+      "Abbreviation": "GSW",
+      "CountryCode": "USA",
+      "Gender": "male",
+      "Id": "sr:competitor:103",
+      "Name": "Golden State Warriors"
+    },
+    {
+      "Abbreviation": "MIA",
+      "CountryCode": "USA",
+      "Gender": "male",
+      "Id": "sr:competitor:104",
+      "Name": "Miami Heat"
+    }
+  ],
+  "Tennis": [
+    {
+      "Abbreviation": "DJK",
+      "CountryCode": "SRB",
+      "Gender": "male",
+      "Id": "sr:competitor:201",
+      "Name": "Novak Djokovic"
+    },
+    {
+      "Abbreviation": "NAD",
+      "CountryCode": "ESP",
+      "Gender": "male",
+      "Id": "sr:competitor:202",
+      "Name": "Rafael Nadal"
+    },
+    {
+      "Abbreviation": "FED",
+      "CountryCode": "SUI",
+      "Gender": "male",
+      "Id": "sr:competitor:203",
+      "Name": "Roger Federer"
+    },
+    {
+      "Abbreviation": "MED",
+      "CountryCode": "RUS",
+      "Gender": "male",
+      "Id": "sr:competitor:204",
+      "Name": "Daniil Medvedev"
+    }
+  ],
+  "Baseball": [
+    {
+      "Abbreviation": "BOS",
+      "CountryCode": "USA",
+      "Gender": "male",
+      "Id": "sr:competitor:301",
+      "Name": "Boston Red Sox"
+    }
+  ]
+}

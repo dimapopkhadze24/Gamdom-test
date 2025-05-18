@@ -1,0 +1,108 @@
+{
+  "Soccer": {
+    "1x2": [
+      {
+        "EventOfferId": 631275807,
+        "EventOffer": "Home",
+        "Locality": 1,
+        "Status": "A",
+        "OfferProviderCode": "1",
+        "TicketQuote": 1.98,
+        "WebQuote": "2.02"
+      },
+      {
+        "EventOfferId": 631275808,
+        "EventOffer": "Draw",
+        "Locality": null,
+        "Status": "A",
+        "OfferProviderCode": "2",
+        "TicketQuote": 3.58,
+        "WebQuote": "3.65"
+      },
+      {
+        "EventOfferId": 631275809,
+        "EventOffer": "Away",
+        "Locality": 2,
+        "Status": "A",
+        "OfferProviderCode": "3",
+        "TicketQuote": 3.48,
+        "WebQuote": "3.55"
+      }
+    ]
+  },
+  "Basketball": {
+    "1x2": [
+      {
+        "EventOfferId": 731275807,
+        "EventOffer": "Home",
+        "Locality": 1,
+        "Status": "A",
+        "OfferProviderCode": "1",
+        "TicketQuote": 1.75,
+        "WebQuote": "1.80"
+      },
+      {
+        "EventOfferId": 731275808,
+        "EventOffer": "Draw",
+        "Locality": null,
+        "Status": "A",
+        "OfferProviderCode": "2",
+        "TicketQuote": 3.8,
+        "WebQuote": "3.85"
+      },
+      {
+        "EventOfferId": 731275809,
+        "EventOffer": "Away",
+        "Locality": 2,
+        "Status": "A",
+        "OfferProviderCode": "3",
+        "TicketQuote": 2.1,
+        "WebQuote": "2.15"
+      }
+    ]
+  },
+  "Tennis": {
+    "1x2": [
+      {
+        "EventOfferId": 831275807,
+        "EventOffer": "Player 1",
+        "Locality": 1,
+        "Status": "A",
+        "OfferProviderCode": "1",
+        "TicketQuote": 1.65,
+        "WebQuote": "1.70"
+      },
+      {
+        "EventOfferId": 831275808,
+        "EventOffer": "Draw",
+        "Locality": null,
+        "Status": "A",
+        "OfferProviderCode": "2",
+        "TicketQuote": 3.9,
+        "WebQuote": "3.95"
+      },
+      {
+        "EventOfferId": 831275809,
+        "EventOffer": "Player 2",
+        "Locality": 2,
+        "Status": "A",
+        "OfferProviderCode": "3",
+        "TicketQuote": 2.25,
+        "WebQuote": "2.30"
+      }
+    ]
+  },
+  "Baseball": {
+    "1x2": [
+      {
+        "EventOfferId": 831275809,
+        "EventOffer": "Player 2",
+        "Locality": 2,
+        "Status": "A",
+        "OfferProviderCode": "3",
+        "TicketQuote": 2.25,
+        "WebQuote": "2.30"
+      }
+    ]
+  }
+}
