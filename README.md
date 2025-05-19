@@ -14,7 +14,7 @@ A modern, responsive betting dashboard built with React, TypeScript, and Vite. T
 1. Clone the repository:
 
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/dimapopkhadze24/Gamdom-test.git
 cd gamdom-test
 ```
 
