@@ -1,18 +1,18 @@
 export const PROD_API_ENDPOINTS = {
   SPORTS: {
-    GET: "/sports",
+    GET: "/data/sports.json",
   },
   GAMES: {
-    GET: "/games",
+    GET: "/data/games.json",
   },
 } as const;
 
 export const MOCK_API_ENDPOINTS = {
   SPORTS: {
-    GET: "/src/assets/data/sports.json",
+    GET: "/data/sports.json",
   },
   GAMES: {
-    GET: "/src/assets/data/games.json",
+    GET: "/data/games.json",
   },
 } as const;
 

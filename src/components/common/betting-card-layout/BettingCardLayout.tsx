@@ -13,7 +13,11 @@ const BettingCardLayout: React.FC<BettingCardLayoutI> = ({ games }) => {
       </Flex>
     );
   return (
-    <Grid columns="repeat(3, 1fr)" gap={32}>
+    <Grid
+      gap={32}
+      columns="repeat(auto-fit, minmax(330px, 1fr))"
+      style={{ placeItems: "center" }}
+    >
       {games?.map((game) => <BettingCard key={game.MatchId} {...game} />)}
     </Grid>
   );

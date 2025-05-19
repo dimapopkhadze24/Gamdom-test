@@ -24,7 +24,7 @@ export const getFeaturedGamesService: () => Promise<
   const localGames = JSON.parse(localStorage.getItem("games") || "[]");
 
   // Combine API games with local games
-  const allGames = [...apiGames, ...localGames];
+  const allGames = [...localGames, ...apiGames];
 
   return allGames as GetFeaturedGamesResI[];
 };
@@ -41,7 +41,7 @@ export const getGamesBySportService: (
   );
 
   // Combine API games with filtered local games
-  const allGames = [...apiGames, ...localGames];
+  const allGames = [...localGames, ...apiGames];
 
   return allGames as GetGamesBySportResI[];
 };

@@ -47,7 +47,7 @@ const BettingCard: React.FC<BettingCardI> = ({
           </Flex>
         </Flex>
       </Flex>
-      <Flex direction="row" justify="space-between">
+      <Flex direction="row" gap={8} justify="space-between">
         {market1x2?.Offers.map((offer) => (
           <OddsCard key={offer.EventOfferId} {...offer} />
         ))}

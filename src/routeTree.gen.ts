@@ -13,19 +13,19 @@ import { createFileRoute } from '@tanstack/react-router'
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as SportSlugImport } from './routes/$sportSlug'
 
 // Create Virtual Routes
 
+const SportSlugLazyImport = createFileRoute('/$sportSlug')()
 const IndexLazyImport = createFileRoute('/')()
 
 // Create/Update Routes
 
-const SportSlugRoute = SportSlugImport.update({
+const SportSlugLazyRoute = SportSlugLazyImport.update({
   id: '/$sportSlug',
   path: '/$sportSlug',
   getParentRoute: () => rootRoute,
-} as any)
+} as any).lazy(() => import('./routes/$sportSlug.lazy').then((d) => d.Route))
 
 const IndexLazyRoute = IndexLazyImport.update({
   id: '/',
@@ -48,7 +48,7 @@ declare module '@tanstack/react-router' {
       id: '/$sportSlug'
       path: '/$sportSlug'
       fullPath: '/$sportSlug'
-      preLoaderRoute: typeof SportSlugImport
+      preLoaderRoute: typeof SportSlugLazyImport
       parentRoute: typeof rootRoute
     }
   }
@@ -58,18 +58,18 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
-  '/$sportSlug': typeof SportSlugRoute
+  '/$sportSlug': typeof SportSlugLazyRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
-  '/$sportSlug': typeof SportSlugRoute
+  '/$sportSlug': typeof SportSlugLazyRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexLazyRoute
-  '/$sportSlug': typeof SportSlugRoute
+  '/$sportSlug': typeof SportSlugLazyRoute
 }
 
 export interface FileRouteTypes {
@@ -83,12 +83,12 @@ export interface FileRouteTypes {
 
 export interface RootRouteChildren {
   IndexLazyRoute: typeof IndexLazyRoute
-  SportSlugRoute: typeof SportSlugRoute
+  SportSlugLazyRoute: typeof SportSlugLazyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexLazyRoute: IndexLazyRoute,
-  SportSlugRoute: SportSlugRoute,
+  SportSlugLazyRoute: SportSlugLazyRoute,
 }
 
 export const routeTree = rootRoute
@@ -109,7 +109,7 @@ export const routeTree = rootRoute
       "filePath": "index.lazy.tsx"
     },
     "/$sportSlug": {
-      "filePath": "$sportSlug.tsx"
+      "filePath": "$sportSlug.lazy.tsx"
     }
   }
 }

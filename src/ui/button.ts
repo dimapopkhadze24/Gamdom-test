@@ -1,20 +1,7 @@
 import styled from "styled-components";
-import { ReactNode } from "react";
+import { ButtonI, ButtonModeT, ButtonSizeT } from "@/types";
 
-type ButtonMode = "primary" | "secondary";
-type ButtonSize = "default" | "large";
-
-interface ButtonProps {
-  children: ReactNode;
-  mode?: ButtonMode;
-  size?: ButtonSize;
-  onClick?: () => void;
-  type?: "button" | "submit" | "reset";
-  disabled?: boolean;
-  className?: string;
-}
-
-const getBackgroundColor = (mode: ButtonMode) => {
+const getBackgroundColor = (mode: ButtonModeT) => {
   switch (mode) {
     case "primary":
       return "var(--primary-brand-color-main)";
@@ -25,7 +12,7 @@ const getBackgroundColor = (mode: ButtonMode) => {
   }
 };
 
-const getHeight = (size: ButtonSize) => {
+const getHeight = (size: ButtonSizeT) => {
   switch (size) {
     case "large":
       return "48px";
@@ -35,7 +22,7 @@ const getHeight = (size: ButtonSize) => {
   }
 };
 
-const getPadding = (size: ButtonSize) => {
+const getPadding = (size: ButtonSizeT) => {
   switch (size) {
     case "large":
       return "24px";
@@ -45,11 +32,9 @@ const getPadding = (size: ButtonSize) => {
   }
 };
 
-export const Button = styled.button.attrs<ButtonProps>(
-  ({ type = "button" }) => ({
-    type,
-  })
-)<ButtonProps>`
+export const Button = styled.button.attrs<ButtonI>(({ type = "button" }) => ({
+  type,
+}))<ButtonI>`
   height: ${({ size = "default" }) => getHeight(size)};
   padding: 0 ${({ size = "default" }) => getPadding(size)};
   background-color: ${({ mode = "primary" }) => getBackgroundColor(mode)};

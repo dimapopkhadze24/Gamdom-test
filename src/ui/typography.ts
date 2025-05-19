@@ -1,18 +1,7 @@
 import styled from "styled-components";
-import { ReactNode } from "react";
+import { TypographyI, TypographyColorT } from "@/types";
 
-type TypographyColor = "light500" | "brandMain" | "light700";
-type TypographyVariant = "span" | "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-
-interface TypographyI {
-  children: ReactNode;
-  color?: TypographyColor;
-  hover?: TypographyColor;
-  variant?: TypographyVariant;
-  className?: string;
-}
-
-const getColor = (color?: TypographyColor) => {
+const getColor = (color?: TypographyColorT) => {
   switch (color) {
     case "light500":
       return "var(--primary-light-color-500)";

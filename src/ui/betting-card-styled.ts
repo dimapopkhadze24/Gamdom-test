@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex } from "./flex";
+import { Flex } from "@/ui";
 
 export const BettingCardStyled = styled(Flex)`
   background-color: var(--primary-dark-color-500);
