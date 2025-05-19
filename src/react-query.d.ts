@@ -1,6 +1,5 @@
 import "@tanstack/react-query";
 import { AxiosError } from "axios";
-import { ErrorI } from "@/api";
 
 interface QueryMeta {
   handledError?: boolean;
