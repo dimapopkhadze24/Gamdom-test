@@ -35,8 +35,6 @@ export const useAddGameBySportReq = () => {
       queryClient.setQueryData(
         ["useGetGamesBySportReq", sportSlug],
         (oldData: GetGamesBySportResI[]) => {
-          console.log(oldData);
-
           return [res, ...oldData];
         }
       );
