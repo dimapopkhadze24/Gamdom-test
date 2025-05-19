@@ -26,7 +26,6 @@ const HeaderComponent = () => {
       params: { sportSlug: sport.toLowerCase() },
     });
   };
-  console.log(data);
 
   if (!data) return null;
 

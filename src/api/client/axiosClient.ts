@@ -19,7 +19,7 @@ export const getAxiosClient = (
 
   // Add request interceptor to delay all requests by 500ms
   axiosClient.interceptors.request.use(async (config) => {
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     return config;
   });
 
