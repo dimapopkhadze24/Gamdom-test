@@ -17,7 +17,7 @@ const OddsCard: React.FC<OddsCardI> = (bet) => {
       direction="row"
       gap={32}
       justify="space-between"
-      isSelected={isSelected}
+      $isSelected={isSelected}
     >
       <Typography variant="h4">{Locality}</Typography>
       <Typography
@@ -33,17 +33,17 @@ const OddsCard: React.FC<OddsCardI> = (bet) => {
 
 export default OddsCard;
 
-const OddsCardStyled = styled(Flex)<{ isSelected: boolean }>`
+const OddsCardStyled = styled(Flex)<{ $isSelected: boolean }>`
   background-color: var(--primary-dark-color-700);
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-  background-color: ${({ isSelected }) =>
-    isSelected
+  background-color: ${({ $isSelected }) =>
+    $isSelected
       ? "var(--primary-brand-color-main)"
       : "var(--primary-dark-color-700)"};
-  ${({ isSelected }) =>
-    !isSelected &&
+  ${({ $isSelected }) =>
+    !$isSelected &&
     `
     &:hover {
       .web-quote {

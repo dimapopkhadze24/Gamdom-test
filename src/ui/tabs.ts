@@ -12,7 +12,7 @@ export const TabList = styled.div`
   padding: 0 1rem;
 `;
 
-export const Tab = styled.button<{ isActive: boolean }>`
+export const Tab = styled.button<{ $isActive: boolean }>`
   padding: 1rem 1.5rem;
   border: none;
   background: none;
@@ -23,8 +23,8 @@ export const Tab = styled.button<{ isActive: boolean }>`
   gap: 8px;
   align-items: center;
   justify-content: center;
-  color: ${({ isActive }) =>
-    isActive
+  color: ${({ $isActive }) =>
+    $isActive
       ? "var(--primary-brand-color-main)"
       : "var(--primary-light-color-500)"};
   margin-bottom: -2px;

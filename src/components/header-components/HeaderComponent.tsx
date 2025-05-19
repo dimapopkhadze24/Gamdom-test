@@ -35,7 +35,7 @@ const HeaderComponent = () => {
         {data.map((sport) => (
           <Tab
             key={sport.sportId}
-            isActive={isActive(sport.sport)}
+            $isActive={isActive(sport.sport)}
             onClick={() => onTabChangeHandler(sport.sport)}
           >
             <HeaderSportIconRenderer iconName={sport.sport} />
